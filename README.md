@@ -23,6 +23,7 @@
 ### 数据集准备
 1. 对需要重建的物体进行环绕拍照，使用 COLMAP 进行参数估计，计算位姿。
 2. 使用 [LLFF](https://github.com/Fyusion/LLFF) 中的 `imgs2poses.py` 脚本创建数据集。
+3. 由于原本run_nerf.py中自带的图片缩放函数在运行中会出现错误，因此使用 `change_size.py` 脚本进行手动下采样。
 
 ### 训练
 1. 在 `/configs` 目录下新建 `target.txt`，参数设置可以参考 `souji.txt`。
