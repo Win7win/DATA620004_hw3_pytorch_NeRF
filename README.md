@@ -8,6 +8,11 @@
 1. **选取身边的物体拍摄多角度图片/视频**，并使用 COLMAP 估计相机参数，随后使用现成的框架进行训练。
 2. **基于训练好的 NeRF 渲染环绕物体的视频，并在预留的测试图片上评价定量结果**。
 
+
+![image](https://github.com/Win7win/DATA620004_hw3_pytorch_NeRF/assets/148932142/1459988d-4d8d-4f78-ad5b-92cd8e9fcfeb)
+
+![image](https://github.com/Win7win/DATA620004_hw3_pytorch_NeRF/assets/148932142/e3c7d012-81e3-4aad-bca9-2c062763096d)
+
 本项目是在 [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch) 基础上完成的。
 
 ### 准备
@@ -35,3 +40,6 @@
    ```sh
    python run_nerf.py --config configs/test.txt --spherify --no_ndc
    ```
+
+
+
